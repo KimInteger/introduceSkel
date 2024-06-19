@@ -1,3 +1,5 @@
+const root = document.getElementById('root');
+
 const hrim = document.getElementById('leader');
 
 const js = document.getElementById('waruru');
@@ -16,7 +18,12 @@ hrim.addEventListener('click',()=>{
 
   xhr.addEventListener('load',()=>{
     if(xhr.status === 200) {
-      console.log(xhr.responseText);
+      root.textContent = xhr.responseText;
+      let a = document.createElement('a');
+
+      a.setAttribute('href','/index.html');
+      a.textContent = '돌아가기';
+      root.appendChild(a);
     } else {
       throw new Error('에러 발생!');
     }
