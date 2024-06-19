@@ -4,14 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>We are 뚝딱스</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    
+    h1 {
+      text-align: center;
+    }
+
+    #root {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    #root > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 200px;
+      height: 400px;
+      border: 2px double black;
+    }
+  </style>
 </head>
 <body>
   <h1>Team-1의 멤버를 소개합니다! 뚝딱이들!</h1>
-  <div id="leader">구하림</div>
-  <div id="pinokio">정호연</div>
-  <div id="yoshi">송이현</div>
-  <div id="waruru">김정수</div>
-  <div id="likeBlack">이연승</div>
-  <script src="./script.js"></script>
+  <div id="root">
+    <div id="leader">구하림</div>
+    <div id="pinokio">정호연</div>
+    <div id="yoshi">송이현</div>
+    <div id="waruru">김정수</div>
+    <div id="likeBlack">이연승</div>
+    <script src="./script.js"></script>
+  </div>
 </body>
 </html>
